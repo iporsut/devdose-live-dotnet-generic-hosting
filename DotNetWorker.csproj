@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <!-- Enable single file -->
+    <PublishSingleFile>true</PublishSingleFile>
+
+    <!-- Self-contained or framework-dependent -->
+    <SelfContained>true</SelfContained>
+
+    <!-- The OS and CPU type you are targeting -->
+    <RuntimeIdentifier>osx.11.0-x64</RuntimeIdentifier>
+
+    <!-- Enable assembly trimming ? for self-contained apps -->
+    <PublishTrimmed>true</PublishTrimmed>
+
+    <!-- Enable AOT compilation -->
+    <PublishReadyToRun>true</PublishReadyToRun>
+
+    <PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>
+
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>dotnet-DotNetWorker-480701CC-C1F4-48C8-9BB1-21D626CD024E</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+  </ItemGroup>
+</Project>
